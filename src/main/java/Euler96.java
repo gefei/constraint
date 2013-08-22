@@ -86,12 +86,12 @@ public class Euler96 {
 
     public static void main(String[] args) throws FileNotFoundException {
         Euler96 sudoku = new Euler96();
-        File file = new File("sudoku.txt");
+        File file = new File("sud.txt");
         Scanner scanner = new Scanner(file);
-        for (int i = 0; i < 50; i++) {
+        //for (int i = 0; i < 50; i++) {
             int[][] numbers = sudoku.readFile(scanner);
             sudoku.solveOne(numbers);
-        }
+        //}
         System.out.println(sudoku.sum);
     }
 }
